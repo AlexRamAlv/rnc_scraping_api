@@ -8,13 +8,13 @@ import time
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/v1/', methods=['GET'])
 def index():
     return jsonify({
         'app':'running',
-        'make a post': 'for scraping info'
+        'make a post to /v1/scrape': 'for scraping info'
     })
-@app.route('/scrape', methods=['POST'])
+@app.route('/v1/scrape', methods=['POST'])
 def scrape_rnc():
     data = request.json
     rnc_number = data.get('rnc_number')
