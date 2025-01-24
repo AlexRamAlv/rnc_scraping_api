@@ -74,5 +74,5 @@ def scrape_rnc():
         driver.quit()
         return jsonify({"error": "Check RNC; it does not exist or it is not well written"}), 500
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+#    app.run()
