@@ -1,4 +1,4 @@
 ﻿Flask==3.1.0
 selenium==4.27.1
-gunicorn==23.0.0
+uvicorn==0.34.0
 
